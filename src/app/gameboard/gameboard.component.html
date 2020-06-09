@@ -1,0 +1,14 @@
+
+<div class="gameboard-container">
+        <div class="header">game state:</div>
+        <div class="board">            
+            <div class="square" *ngFor="let state of boardState;let i=index" >
+                <div *ngIf="isFillable(state) else elseBlock">
+                    <input class="board-input" type="text" (change)="handleBoardInput()">
+                </div>
+                <ng-template #elseBlock>                {{state}}
+                </ng-template>
+            </div>
+        </div>        
+</div>
+

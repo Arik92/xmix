@@ -1,0 +1,23 @@
+.gameboard-container {
+    display:flex;
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .board {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .square {
+        border: 1px solid black;
+        height:30px;
+        width:30px;
+    }
+    .board-input {
+        height:20px;
+        width:20px;
+    }
+}
